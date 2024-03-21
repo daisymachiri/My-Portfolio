@@ -32,7 +32,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 100px 9% 20px;
 }
 
 .home {
@@ -45,6 +45,21 @@ section {
     font-size: 3.2rem;
     font-weight: 700;
 }
+@keyframes waving {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-24px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  
+  .waving-hand {
+    animation: waving 2s ease-in-out infinite;
+  }
 
 .home-container h3:nth-of-type(2) {
     margin-bottom: 2rem;
