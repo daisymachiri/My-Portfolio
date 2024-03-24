@@ -29,7 +29,35 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 }
+  .navbar-brand {
+    font-size: 24px;
+    margin-right: 20px;
+    color: var(--text-color);
+  }
+  .navbar-nav {
+    margin-left: auto;
+  }
+  .navbar .nav-link {
+    font-size: 16px;
+color: var(--text-color);}
+  .navbar .nav-link.active {
+    font-weight: bold; 
+  }
+  
 
+  .navbar .nav-link:hover {
+    color: #007bff; 
+  }
+  
+
+  
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
 section {
     min-height: 100vh;
     padding: 100px 9% 100px;
