@@ -249,3 +249,70 @@ span {
     padding: 0.4rem;
     margin: 1rem;
   }
+  .about { display: flex;
+justify-content: center;
+align-items: center;
+gap: 10rem;
+background: var(--snd-bg-color);
+color: var(--text-color);}
+
+.about h2 span {
+    color: var(--min-color);
+    text-shadow: 0 0 50px var(--min-color);
+}
+.about img {border-radius: 50%;}
+.about-img img{
+    position: relative;
+    top: 3rem;
+    width: 34vw;
+    box-shadow: 0 0 25px var(--min-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    animation: floatImage 2s ease-in-out infinite;
+    border-radius: 50%;
+}
+.about-img img:hover {
+    box-shadow: 0 0 25px var(--min-color),
+    0 0 50px var(--min-color),
+    0 0 100px var(--min-color)
+}
+heading { text-align: center;
+font-size: 8rem;}
+.about-container h2 {text-align: left;
+line-height: 1.5;}
+.about-container h3 {
+    font-size: 2.6rem;
+}
+.about-container p {
+font-size: 16px;
+margin: 2rem 0 3rem;
+}
+.contact { background-color: var(--snd-bg-color);}
+.contact h1 {margin-top: 3rem;
+color: var(--text-color);
+text-align: center;}
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input, .contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    border: 2px solid var(--min-color);
+    margin: 1rem 0;
+    resize: none;
+}
+.contact form .btn {
+    margin-top: 2rem;
+}
