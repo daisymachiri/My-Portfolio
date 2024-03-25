@@ -17,11 +17,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
     <script
       src="https://kit.fontawesome.com/ddc3ee268a.js"
       crossorigin="anonymous"
@@ -29,30 +26,34 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Daisy <span>Machiri</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-      <a class="nav-link" href="index.html#project-container">Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Daisy <span>Machiri</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+  </section>
+              <a class="nav-link" aria-current="page" href="#homepage-about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#project-container-info">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Expertise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
   <section class="home" id="home">
     <div class="home-img">
@@ -61,7 +62,7 @@
     <div class="home-container">
       <h3><span class="waving-hand">&#128075;</span>Hi, I'm</h3>
       <h1>Daisy Machiri</h1>
-      <h2><span>Front-end developer</span> based in South Africa</h2>
+      <h2 class="text-animation"><span></span> based in South Africa</h2>
       <p>As a front-end web developer, I love the creativity it allows and enjoy applying my programming skills to make websites user-friendly and easy to navigate.</p>
       <div class="social-media">
         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -72,9 +73,16 @@
       <a href="about.html#contact" class="btn">Contact Me</a>
     </div>
   </section>
+  <section class="homepage-about" id="homepage-about">
+    <div class="homepage-about-container">
+        <h1>About <span>Me</span></h1>
+        <p>I am a self-taught developer with a relentless drive for learning and innovation. My journey into the world of programming began with a deep curiosity and a desire to solve real-world problems. I've honed my skills through hands-on projects and continuous self-study. I thrive on the challenge of translating complex ideas into simple, intuitive solutions that delight users and make a positive impact. I am committed to delivering high-quality software that exceeds expectations. Let's embark on this exciting journey together, where innovation knows no bounds and every challenge presents an opportunity for growth. Together, we'll create impactful experiences that inspire, empower, and elevate.!</p>
+        <a href="about.html" class="btn">Discover More About Me</a>
+    </div>
+  </section>
   <section class="project-container-info" id="project-container-info">
     <div class="project-container" id="project-container">
-      <h1>Embark on a Tour of My Work</h1>
+      <h1>Embark on a <span>Tour of My Work</span></h1>
       <p>Welcome to my portfolio! Below, you'll find a curated selection of my latest projects, showcasing my skills and creativity in web development, design, and more. From interactive web applications to visually stunning designs, each project represents a unique journey of problem-solving and innovation. Take your time to explore and feel free to reach out with any questions or collaboration opportunities!</p>
       <div class="project-info" id="project-info">
         <div class="project">

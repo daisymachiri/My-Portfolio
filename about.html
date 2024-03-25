@@ -17,11 +17,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
     <script
       src="https://kit.fontawesome.com/ddc3ee268a.js"
       crossorigin="anonymous"
@@ -29,40 +26,38 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Daisy <span>Machiri</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-          <a class="nav-link" href="index.html#project-container">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html#contact">Contact</a>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" ria-current="page" href="#">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" ria-current="page" href="#">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" ria-current="page" href="#">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" ria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
       </header>
       <section class="about" id="about">
         <div class="about-container">
             <h1>About <span>Me</span></h1>
-            <p>Welcome to my corner of the internet! I'm Daisy Machiri, a passionate front-end web developer based in South Africa. Ever since I discovered my love for coding, I've been on an exciting journey of creativity and exploration in the digital world.</p>
-            <p>With a background in computer science and a natural flair for design, I bring a unique blend of technical expertise and artistic vision to every project I undertake. I thrive on the challenge of turning ideas into reality, using code as my paintbrush to craft immersive and intuitive user experiences.</p>
-            <p>My journey in web development has been filled with exciting opportunities to learn and grow. From mastering the latest front-end technologies to honing my skills in responsive design and user interface development, I'm constantly pushing the boundaries of what's possible in the digital realm.</p>
-            <p>What sets me apart as a developer is my commitment to delivering not just functional websites, but memorable experiences that leave a lasting impression. Whether it's building interactive web applications, optimizing site performance, or refining the smallest details of a user interface, I approach each task with passion, precision, and a relentless pursuit of excellence.</p>
-            <p>Outside of coding, you can find me exploring the great outdoors, capturing moments through my lens, or immersing myself in a good book. I believe in the power of curiosity, creativity, and continuous learning to fuel personal and professional growth, and I'm always eager to embark on new adventures and challenges.</p>
-            <p>Thank you for taking the time to visit my portfolio. I invite you to explore my projects, connect with me on social media, and join me on this exciting journey of innovation and discovery in the world of web development.</p>
+            <p>Welcome to my corner of the internet! I'm Daisy Machiri, a passionate front-end web developer based in South Africa. Ever since I discovered my love for coding, I've been on an exciting journey of creativity and exploration in the digital world. Thank you for taking the time to visit my portfolio. I invite you to explore my <a class="links" href="index.html#project-container-info">projects</a>, connect with me on social media, and join me on this exciting journey of innovation and discovery in the world of web development.</p>
             <a href="about.html#contact" class="btn">Contact Me</a>
         </div>
         <div class="about-img">
@@ -71,7 +66,7 @@
       </section>
       <section class="contact" id="contact">
         <h1 class="heading">Contact <span>Me</span></h1>
-        <form action="#">
+        <form action="mailto:daisymachiri1999@gmail.com" method="post" enctype="text/plain">
             <div class="input-box">
                 <input type="text" placeholder="Full Name">
                 <input type="text" placeholder="Email">
