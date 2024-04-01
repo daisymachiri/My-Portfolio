@@ -274,7 +274,7 @@ span {
         margin: 2rem 0 3rem;
     }    
 .project-container-info {
-    background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+    background: var(--bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -345,6 +345,22 @@ span {
     padding: 0.4rem;
     margin: 1rem;
   }
+  .project-container-info .home-link {
+    position: relative;
+    margin-top: 50px;
+}
+
+.project-container-info .home-link i {
+    position:absolute;
+    bottom: -1rem;
+    right: -5rem;
+    font-size: 24px; 
+    color: var(--min-color); 
+    border: 1px solid var(--min-color);
+    border-radius: 5px; 
+    text-align: center; 
+    line-height: 40px;
+}
   .about { display: flex;
 justify-content: center;
 align-items: center;
@@ -487,6 +503,7 @@ text-align: center;}
     margin: 50px auto;
     max-width: 800px;
     padding: 0 20px;
+    background: var(--bg-color);
 }
 .expertise .heading {font-size: 7rem;
     text-align: center;}
@@ -540,13 +557,17 @@ text-align: center;}
 }
 .home-link {
     position: relative;
-    margin-top: 20px; 
+    margin-top: 50px;
 }
 
 .home-link i {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    position:absolute;
+    bottom: -8rem;
+    right: -100rem;
     font-size: 24px; 
-    color: #333; 
+    color: var(--min-color); 
+    border: 1px solid var(--min-color);
+    border-radius: 5px; 
+    text-align: center; 
+    line-height: 40px;
 }
