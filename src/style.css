@@ -490,3 +490,63 @@ text-align: center;}
 }
 .expertise .heading {font-size: 7rem;
     text-align: center;}
+.expertise p {font-size: 16px;
+      margin: 2rem 0 3rem;
+        text-align: center;
+    }
+.expertise .expertise-wrapper{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.expertise .expertise-wrapper .expertise-box {
+    text-align: center;
+    width: 330px;
+    height: 330px;
+    flex-basis: calc(50% - 20px);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px var(--min-color);
+    padding: 26px 20px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out 0s;
+    overflow: hidden;
+}
+.expertise .expertise-wrapper .expertise-box h3 {
+    color: var(--text-color)
+}
+.expertise .expertise-wrapper .expertise-box ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+.expertise .expertise-wrapper .expertise-box ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.expertise .expertise-wrapper .expertise-box ul .icon {
+    width: 60px; 
+    height: 60px;
+    margin-right: 20px;
+    vertical-align: middle; 
+}
+.expertise .expertise-wrapper .expertise-box ul .icon,
+.expertise .expertise-wrapper .expertise-box ul li {
+    display: block; 
+    text-align: center;
+}
+.home-link {
+    position: relative;
+    margin-top: 20px; 
+}
+
+.home-link i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px; 
+    color: #333; 
+}
