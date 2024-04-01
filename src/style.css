@@ -376,7 +376,85 @@ color: var(--text-color);}
 font-size: 16px;
 margin: 2rem 0 3rem;
 }
-.contact { background-color: var(--snd-bg-color);}
+
+.education h1 {
+    font-size: 7rem;
+    text-align: center;}
+.education h1 span {
+    color: var(--min-color);
+    text-shadow: 0 0 50px var(--min-color);}
+.education .edu-para {
+    font-size: 16px;
+    margin: 2rem 0 3rem;
+    text-align: center;
+}
+.education .education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.education .education-box {
+    width: calc(50% - 2rem);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-left: 0.5rem solid var(--min-color);
+    position: relative;
+    margin-right: 2rem;
+}
+
+.education .education-box span {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 1rem
+    
+}
+
+.education .education-box h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-top: 0;
+}
+
+.education .education-box p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.education .education-box i {
+    position: absolute;
+    top: -1rem;
+    left: -2.7rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    border-radius: 50%;
+    background: var(--min-color);
+    padding: 1.2rem;
+}
+.experience-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.experience-container .heading {
+    font-size: 7rem;
+    text-align: center;
+}
+
+.experience-container span {
+    color: var(--min-color);
+    text-shadow: 0 0 50px var(--min-color);
+}
+
+.experience-container p {
+    text-align: center;
+    font-size: 16px;
+    margin: 2rem 0 3rem;
+}   
+
+.contact { background-color: var(--bg-color);}
 .contact h1 {margin-top: 3rem;
 color: var(--text-color);
 text-align: center;}
