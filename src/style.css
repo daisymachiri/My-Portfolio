@@ -40,6 +40,15 @@ color: var(--min-color);}
   .bg-light {
     background-color: var(--bg-color) !important;
 }
+.navbar-light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--bg-color);
+    transition: top 0.3s; 
+}
 .navbar-light .navbar-nav {
     margin-left: auto;
 }
@@ -346,22 +355,7 @@ span {
     padding: 0.4rem;
     margin: 1rem;
   }
-  .project-container-info .home-link {
-    position: relative;
-    margin-top: 20px;
-}
-
-.project-container-info .home-link i {
-    position:absolute;
-    bottom: -5rem;
-    right: -1rem;
-    font-size: 24px; 
-    color: var(--min-color); 
-    border: 1px solid var(--min-color);
-    border-radius: 5px; 
-    text-align: center; 
-    line-height: 40px;
-}
+ 
   .about { display: flex;
 justify-content: center;
 align-items: center;
@@ -556,22 +550,7 @@ text-align: center;}
     display: block; 
     text-align: center;
 }
-.home-link {
-    position: relative;
-    margin-top: 50px;
-}
 
-.home-link i {
-    position:absolute;
-    bottom: -8rem;
-    right: -100rem;
-    font-size: 24px; 
-    color: var(--min-color); 
-    border: 1px solid var(--min-color);
-    border-radius: 5px; 
-    text-align: center; 
-    line-height: 40px;
-}
 .footer {
     position: relative;
     bottom: 0;
@@ -674,12 +653,13 @@ text-align: center;}
 
     .project-container {
         flex-direction: column;
-        padding: 50px 0;
+        padding: 30px 0;
     }
 
     .project {
-        width: 80%;
-        margin: 20px auto;
+            width: 90%; 
+            margin: 10px auto;
+            height: auto;
     }
 
     .project-img {
@@ -744,38 +724,4 @@ text-align: center;}
     }
 
     .about .about-container {text-align: center;}
-    .home-link {
-        position: relative;
-        margin-top: 20px;
-    }
-
-    .home-link i {
-        position: absolute;
-        bottom: -2rem;
-        right: 50%;
-        transform: translateX(50%);
-        font-size: 24px;
-        color: var(--min-color);
-        border: 1px solid var(--min-color);
-        border-radius: 5px;
-        text-align: center;
-        line-height: 40px;
-    }
-    .project-container-info .home-link {
-        position: relative;
-        margin-top: 20px;
-    }
-    
-    .project-container-info .home-link i {
-        position: absolute;
-        bottom: -2rem;
-        right: 50%;
-        transform: translateX(50%);
-        font-size: 24px;
-        color: var(--min-color);
-        border: 1px solid var(--min-color);
-        border-radius: 5px;
-        text-align: center;
-        line-height: 40px;
-    }
 }
