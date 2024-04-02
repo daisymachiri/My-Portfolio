@@ -110,18 +110,19 @@
       <section class="contact" id="contact">
         <h1 class="heading">Contact <span>Me</span></h1>
         <p class="contact-description">Feel free to send me an email at <a href="mailto:daisymachiri1999@gmail.com" title="Send email to Daisy Machiri">daisymachiri1999@gmail.com</a>, or use the form below. I'll get back to you as soon as possible.</p>
-        <form action="" method="post" enctype="text/plain">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Email">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="button" value="Send Message" class="btn">
-        </form>
+        <form action="#">
+          <div class="input-box">
+              <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+              <input type="text" placeholder="Email" id="email" class="item" autocomplete="off">
+          </div>
+          <div class="input-box">
+              <input type="number" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+              <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+          </div>
+          <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+      </form>
+      
       </section>
       <footer class="footer">
         <div class="socials">
@@ -159,6 +160,9 @@
           <a href="https://daisymachiriportfolio.netlify.app" title="Hosted on Netlify">Netlify</a>.
         </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="https://smtpjs.com/v3/smtp.js">
+      </script>
       <script src="src/script.js"></script>
 </body>
 </html>
