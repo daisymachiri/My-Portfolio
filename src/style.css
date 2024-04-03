@@ -464,7 +464,9 @@ margin: 2rem 0 3rem;
     margin: 2rem 0 3rem;
 }   
 
-.contact { background-color: var(--bg-color);}
+.contact {
+    background-color: var(--bg-color);
+}
 .contact .heading {font-size: 7rem;
     margin-top: 3rem;
 color: var(--text-color);
@@ -474,27 +476,56 @@ text-align: center;}
     font-size: 16px;
     margin: 2rem 0 3rem;
 }   
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.contact form .input-box {
+.form-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
-.contact form .input-box input, .contact form textarea{
+.contact form {
+    align-items: center;
+    max-width: 600px;
+    text-align: center;
+}
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+.input-box .input-field {
+    width: 48.5%;
+
+}
+.field .item {
     width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border-radius: 0.8rem;
+    padding: 18px;
+    background: transparent;
     border: 2px solid var(--min-color);
-    margin: 1rem 0;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: var(--text-color);
+    margin: 12px 0;
+}
+.field.error .item {
+    border-color: #d93025;
+}
+.field .item::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+.field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+.field.error .error-txt {
+    display: block;
+}
+form .textarea-field .item{
     resize: none;
+}
+form .textarea-field .error-txt {
+    margin-top: -10px;
 }
 .contact form .btn {
     margin-top: 2rem;

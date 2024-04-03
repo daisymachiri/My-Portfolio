@@ -110,20 +110,36 @@
       <section class="contact" id="contact">
         <h1 class="heading">Contact <span>Me</span></h1>
         <p class="contact-description">Feel free to send me an email at <a href="mailto:daisymachiri1999@gmail.com" title="Send email to Daisy Machiri">daisymachiri1999@gmail.com</a>, or use the form below. I'll get back to you as soon as possible.</p>
-        <form action="#">
-          <div class="input-box">
-              <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+        <div class="form-container">
+          <form action="#">
+            <div class="input-box">
+              <div class="input-field field">
+                <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                <div class="error-txt">Full Name can't be blank</div>
+              </div>
+              <div class="input-field field">
               <input type="text" placeholder="Email" id="email" class="item" autocomplete="off">
-          </div>
-          <div class="input-box">
-              <input type="number" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
-              <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
-          </div>
-          <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
-          <button type="submit" class="btn">Send Message</button>
-      </form>
-      
-      </section>
+              <div class="error-txt email">Email Address can't be blank</div>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="input-field field">
+                <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                <div class="error-txt">Phone Number can't be blank</div>
+              </div>
+              <div class="input-field field">
+                <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                <div class="error-txt">Subject can't be blank</div>
+              </div>
+            </div>
+            <div class="textarea-field field">
+              <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+              <div class="error-txt">Message can't be blank</div>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        </div>
+    </section>
       <footer class="footer">
         <div class="socials">
           <a href="https://www.instagram.com/daisy_machiri?igsh=enM5emxma3I1djQ0" title="Instagram"><i class="fab fa-instagram"></i></a>

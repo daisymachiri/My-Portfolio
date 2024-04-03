@@ -1,9 +1,9 @@
-const form = document.querySelector("form")
+const form = document.querySelector("form");
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const subject = document.getElementById("subject");
-const mess = document.getElementById("message")
+const mess = document.getElementById("message");
 
 function sendEmail() {
     const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone: ${phone.value}<br> Subject: ${subject.value}<br> Message: ${mess.value}<br>`;
@@ -52,9 +52,18 @@ function checkInputs() {
 }
 function checkEmail() {
     const emailRegex = /^([a-z\d.-]+)@([a-z\d.-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+    const errorTxtEmail = document.querySelector(".error-txt.email")
+
     if (!email.value.match(emailRegex)) {
         email.classList.add("error");
         email.parentElement.classList.add("error");
+
+        if (email.value != ""){
+            errorTxtEmail.innerText = "Enter a valid email address";
+        }
+        else {
+            errorTxtEmail.innerText = "Email Address can't be blank";
+        }
     }
     else {
         email.classList.remove("error");
@@ -65,7 +74,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     checkInputs();
     
-    if (!fullName.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !mess.classList.contains("error") ){
+    if (!fullName.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !mess.classList.contains("error")){
         sendEmail();
 
         form.reset();
