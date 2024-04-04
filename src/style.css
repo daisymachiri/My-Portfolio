@@ -27,6 +27,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 .links {text-decoration: none;
 font-style: italic;
@@ -36,6 +37,7 @@ color: var(--min-color);}
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    overflow-x: hidden;
   }
   .bg-light {
     background-color: var(--bg-color) !important;
