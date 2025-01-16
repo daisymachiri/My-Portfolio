@@ -247,6 +247,12 @@ span {
     box-shadow: 0 0 25px var(--min-color);
     transform: scale(1.3)translateY(-5px);
 }
+.btn-group {
+    display: flex; /* Flexbox ensures buttons align in a row */
+    justify-content: center; /* Centers the buttons */
+    align-items: center; /* Vertically aligns buttons */
+    gap: 10px; /* Adjusts spacing between the buttons */
+}
 
 .btn {
     display: inline-block;
@@ -261,11 +267,17 @@ span {
     font-weight: 600;
     transition: 0.5s ease;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    min-width: 150px; /* Ensures buttons are the same width */
+    text-align: center; /* Centers the text inside the buttons */
 }
 
 .btn:hover {
     transform: scale(1.05);
-        box-shadow: 0 0 50px var(--min-color);}
+    box-shadow: 0 0 50px var(--min-color);
+}
+
     .homepage-about-container {
         text-align: center;
         margin-top: 30px;
